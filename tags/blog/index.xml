@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on MaoVlog</title>
+    <link>https://blog.maovlog.com/tags/blog/</link>
+    <description>Recent content in blog on MaoVlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 16 Mar 2020 11:25:05 -0500</lastBuildDate><atom:link href="https://blog.maovlog.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>快速搭建Hugo博客</title>
+      <link>https://blog.maovlog.com/posts/hugo-blog/</link>
+      <pubDate>Mon, 16 Mar 2020 11:25:05 -0500</pubDate>
+      
+      <guid>https://blog.maovlog.com/posts/hugo-blog/</guid>
+      <description>前言  一直以来用了这么多年的Wordpress，最近心血来潮，想要重新折腾一番自己的博客。于是想用Hugo搭建。
+Hugo 是目前比较流行的Go编写的静态网站生成器，速度快，易用，可配置，相比Hexo来说操作更为简单。
+Hugo 有一个内容和模板目录，把他们渲染到完全的 HTML 网站。可以参照Hugo官网 搭建自己个人博客。
+   下载、安装Hugo  这里MAC用户和Windows用户的操作是不同的。
+ MAC用户  在控制台依次输入$ brew install hugo、$ hugo version 就可以下载下来了。
+ Windows用户   下载地址：https://github.com/spf13/hugo/releases。  根据自己的操作系统，下载对应的安装包。我的操作系统是Win10 64bit， 选择了hugo_0.69.2_Windows-64bit.zip。
+ 解压后只需要把文件夹中hugo.exe文件单独拿出来，放到你预先建立的文件夹里，如你在D盘的software文件夹中建了一个名为hugo的文件夹，则你最后得到的地址为D:\Software\hugo\hugo.exe
+  把D:\Software\hugo\加到环境变量的PATH中，这一步很关键
+  重启终端，运行hugo version查看版本.
+  完成以上步骤后，打开命令行输入 hugo help
+如果得到如下信息，说明安装成功。
+hugo is the main command, used to build your Hugo site. Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go.</description>
+    </item>
+    
+    <item>
+      <title>Hello world!</title>
+      <link>https://blog.maovlog.com/posts/helloworld/</link>
+      <pubDate>Sun, 15 Dec 2019 11:25:05 -0500</pubDate>
+      
+      <guid>https://blog.maovlog.com/posts/helloworld/</guid>
+      <description>你好世界，愿这里成为你的一片净土。</description>
+    </item>
+    
+  </channel>
+</rss>

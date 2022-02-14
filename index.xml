@@ -1,0 +1,558 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MaoVlog</title>
+    <link>https://blog.maovlog.com/</link>
+    <description>Recent content on MaoVlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 22 Jan 2022 14:53:36 +0800</lastBuildDate><atom:link href="https://blog.maovlog.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+    <title>给博客换身皮</title>
+    <link>https://blog.maovlog.com/posts/theme-2022/</link>
+    <pubDate>Sat, 22 Jan 2022 14:53:36 +0800</pubDate>
+    
+    <guid>https://blog.maovlog.com/posts/theme-2022/</guid>
+    <description>
+        &lt;p&gt;春节快来了，顺便把博客更新一下。差不多大半年没更新博客了。&lt;/p&gt;
+&lt;p&gt;自从以前的Hexo换成了Hugo，速度真的快了很多，不愧是 “The world’s fastest”。用的主题是 &lt;a href=&#34;https://github.com/WingLim/hugo-tania&#34;&gt;Tania&lt;/a&gt;，很简洁、漂亮。Hugo 非常易用，我不喜欢花里胡哨的东西。我所以就选择了这款主题。🌈&lt;/p&gt;
+&lt;p&gt;CI 用的是 GitHub Actions:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;GitHub Page Deploy&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;push&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;branches&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;jobs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;build-deploy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;runs-on&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;ubuntu-20.04&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;steps&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Checkout main&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;uses&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;actions/checkout@v2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Setup Hugo&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;uses&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;peaceiris/actions-hugo@v2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;with&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;hugo-version&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;0.81.0&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# extended: true&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Build Hugo&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;          &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;hugo&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Deploy Hugo to gh-pages&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;uses&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;peaceiris/actions-gh-pages@v2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;env&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ACTIONS_DEPLOY_KEY&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;${{ secrets.ACTIONS_DEPLOY_KEY }}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;PUBLISH_BRANCH&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;gh-pages&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;PUBLISH_DIR&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;./public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;总之就是非常丝滑&lt;/strong&gt;，Hugo NB!&lt;/p&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>jsdelivr CDN挂了解决方案</title>
+    <link>https://blog.maovlog.com/posts/jsdelivr-cdn-no/</link>
+    <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
+    
+    <guid>https://blog.maovlog.com/posts/jsdelivr-cdn-no/</guid>
+    <description>
+        &lt;p&gt;我几个月没打开博客网站了，突然发现使用的Twikoo评论系统无法显示，发布的哔哔也是！
+找了下原因结果是 jsdelivrCDN加速的库都无法加载了！百度了下才知道已经挂了！(ノ°ο°)ノ&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;20211220 jsdelivr cdn 挂了，证书过期，导致网站挂了，要想修复它，解决方案如下&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;使用别的cdn临时代替推荐&#34;&gt;
+    &lt;a href=&#34;#%e4%bd%bf%e7%94%a8%e5%88%ab%e7%9a%84cdn%e4%b8%b4%e6%97%b6%e4%bb%a3%e6%9b%bf%e6%8e%a8%e8%8d%90&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    使用别的cdn临时代替(推荐)
+&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://unpkg.com/&#34;&gt;https://unpkg.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;把资源全部下载到本地不推荐&#34;&gt;
+    &lt;a href=&#34;#%e6%8a%8a%e8%b5%84%e6%ba%90%e5%85%a8%e9%83%a8%e4%b8%8b%e8%bd%bd%e5%88%b0%e6%9c%ac%e5%9c%b0%e4%b8%8d%e6%8e%a8%e8%8d%90&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    把资源全部下载到本地(不推荐)
+&lt;/h3&gt;
+&lt;p&gt;可以暂时把所有资源都下载到本地，等待jsdelivr修复完毕再替换回去&lt;/p&gt;
+&lt;h3 id=&#34;什么不会替换&#34;&gt;
+    &lt;a href=&#34;#%e4%bb%80%e4%b9%88%e4%b8%8d%e4%bc%9a%e6%9b%bf%e6%8d%a2&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    什么？不会替换？
+&lt;/h3&gt;
+&lt;p&gt;不管你是前后端分离的项目，还是后端语言搭载模板引擎的传统mvc项目，都可以快速替换。
+比如你原本是类似如下格式引入jquery&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;你直接替换为如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://unpkg.com/jquery@3.6.0/dist/jquery.min.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;简单来说就是把&lt;code&gt;https://cdn.jsdelivr.net/npm/&lt;/code&gt;替换为&lt;code&gt;https://unpkg.com/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;目前我托管在github仓库的图床还没找到完美的加速方案！&lt;/p&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>你好！2021</title>
+    <link>https://blog.maovlog.com/posts/2021/</link>
+    <pubDate>Tue, 16 Feb 2021 16:53:46 +0800</pubDate>
+    
+    <guid>https://blog.maovlog.com/posts/2021/</guid>
+    <description>
+        &lt;p&gt;时间过的真快，现在又是新的一年，终于摔开了不痛快的2020。&lt;/p&gt;
+&lt;p&gt;2020真是不幸运的一年，一开始就是疫情的来临。&lt;/p&gt;
+&lt;p&gt;让我在家呆了半年，什么事情都没干成，失去的东西也不少。&lt;/p&gt;
+&lt;p&gt;开了几年的几十万的奥迪也秒变吉利，老婆的服装店也亏损不少。&lt;/p&gt;
+&lt;p&gt;让我欠下一屁股的债和刷爆了信用卡，不少顺心的事也接连不断。&lt;/p&gt;
+&lt;p&gt;在这年里面真是让人心态失落，崩溃啊！😕&lt;/p&gt;
+&lt;p&gt;现在又到了新的一年，我多的话不想说。&lt;/p&gt;
+&lt;p&gt;只希望全家幸福安康，儿子快乐成长，开开心心过好每一天即可。🐂 666&lt;/p&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>端午节</title>
+    <link>https://blog.maovlog.com/posts/duanwu/</link>
+    <pubDate>Wed, 24 Jun 2020 13:53:46 +0800</pubDate>
+    
+    <guid>https://blog.maovlog.com/posts/duanwu/</guid>
+    <description>
+        &lt;p&gt;端午临中夏，时清日复长&lt;/p&gt;
+&lt;p&gt;每年农历五月初五&lt;/p&gt;
+&lt;p&gt;是中国人的传统佳节——端午节&lt;/p&gt;
+&lt;p&gt;门插艾，香满堂，吃粽子，撒白糖&lt;/p&gt;
+&lt;p&gt;而在吃货们的眼中&lt;/p&gt;
+&lt;p&gt;不以食物为代表的节日，都是“耍流氓”&lt;/p&gt;
+&lt;p&gt;小时候&lt;/p&gt;
+&lt;p&gt;妈妈会早几天就开始包粽子&lt;/p&gt;
+&lt;p&gt;爷爷都给我们准备雄黄酒&lt;/p&gt;
+&lt;p&gt;以迎接端午节&lt;/p&gt;
+&lt;p&gt;然后串门外婆家去大吃几顿，粽意深情.&lt;/p&gt;
+&lt;p&gt;浓浓的粽香，撞上深沉的爱&lt;/p&gt;
+&lt;p&gt;注定是爱意满满，幸福多多。&lt;/p&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>frp隐藏CMD窗口运行</title>
+    <link>https://blog.maovlog.com/posts/frp-1/</link>
+    <pubDate>Tue, 28 Apr 2020 14:53:46 +0800</pubDate>
+    
+    <guid>https://blog.maovlog.com/posts/frp-1/</guid>
+    <description>
+        &lt;p&gt;&lt;img src=&#34;https://blog.maovlog.com/images/code1.jpg&#34; alt=&#34;code1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;新建一个文本文档在开头处写入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@echo off
+if &amp;quot;%1&amp;quot; == &amp;quot;h&amp;quot; goto begin
+mshta vbscript:createobject(&amp;quot;wscript.shell&amp;quot;).run(&amp;quot;&amp;quot;&amp;quot;%~nx0&amp;quot;&amp;quot; h&amp;quot;,0)(window.close)&amp;amp;&amp;amp;exit
+:begin
+REM
+frpc.exe -c frpc.ini
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其中frpc.exe -c frpc.ini为运行命令。
+另存为.bat文件，放在frp目录下，双击该bat文件会在屏幕中一闪而过。&lt;/p&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>吐槽神器—B言B语</title>
+    <link>https://blog.maovlog.com/posts/bb/</link>
+    <pubDate>Sat, 25 Apr 2020 14:53:46 +0800</pubDate>
+    
+    <guid>https://blog.maovlog.com/posts/bb/</guid>
+    <description>
+        &lt;p&gt;&lt;img src=&#34;https://blog.maovlog.com/images/bb.jpg&#34; alt=&#34;bb&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在刷博客的时候无意中发现@Daibor大佬的文章写到利用后端 BaaS 快速搭建专属无点赞评论版微博b言b语。&lt;a href=&#34;https://sspai.com/post/60024&#34;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我搭建的BB演示👇：&lt;a href=&#34;http://bb.ChenPlus.com&#34;&gt;bb.ChenPlus.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;基于LeanCloud 来实现的。前端用 AppID、AppKey 来展示，并把 class 的 create 、delete 、update 三项权限设置为「指定用户」，后端用 MasterKey 来更新，避免数据被更改。&lt;/p&gt;
+&lt;p&gt;通过作者提供的index.html &lt;a href=&#34;https://github.com/daibor/nonsense.fun&#34;&gt;仓库下载&lt;/a&gt;文件进行修改配置.&lt;/p&gt;
+&lt;p&gt;最后发布更新文章&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;原作者提供了 &lt;a href=&#34;https://www.icloud.com/shortcuts/3cfcbc36a6a24e0a8721bfeef8dfc6cf&#34;&gt;iOS 快捷指令&lt;/a&gt; 和 win下的 &lt;a href=&#34;https://getquicker.net/sharedaction?code=eeb80278-5f53-4b0d-d333-08d7e0dd26a9&#34;&gt;Quicker 模板&lt;/a&gt;。这里增加一个 VSCode 的 &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=humao.rest-client&#34;&gt;REST Client&lt;/a&gt; 插件更新方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;新建一个 .http 或 .rest 为后缀的文件：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;nx&#34;&gt;POST&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//你的AppID前6位.api.lncldglobal.com/1.1/classes/content
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;X&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;LC&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;你的AppID&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;X&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;LC&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;你的MasterKey&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;master&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;Content&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Type&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;application&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;json&lt;/span&gt;
+
+&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;s&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;B言B语&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;写好 content 内容后【右键–Send Request】或快捷键 【Cmd+Alt+R】发布。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这样大功告成！你就可以尽情的狂言吐槽一番.&lt;/strong&gt;&lt;/p&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>你妹，就是这个风格。</title>
+    <link>https://blog.maovlog.com/posts/bokenimei/</link>
+    <pubDate>Fri, 17 Apr 2020 15:05:55 +0800</pubDate>
+    
+    <guid>https://blog.maovlog.com/posts/bokenimei/</guid>
+    <description>
+        &lt;p&gt;&lt;img src=&#34;https://blog.maovlog.com/images/blog1.jpg&#34; alt=&#34;blog1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;总是换来换去，之前的博客服务器被我干崩了，数据全部没了！&lt;/p&gt;
+&lt;p&gt;现在又重新用go语言搭建的静态博客，直接托管到仓库。&lt;/p&gt;
+&lt;p&gt;省略了数据备份，又节约了服务器成本。&lt;/p&gt;
+&lt;p&gt;博客来对我来说是不注重于写作，爱好于折腾。&lt;/p&gt;
+&lt;p&gt;哎~重头再来吧！继续折腾~😂&lt;/p&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>用cloud studio来搭建Hugo</title>
+    <link>https://blog.maovlog.com/posts/hugo-cloudstudio/</link>
+    <pubDate>Wed, 15 Apr 2020 14:53:46 +0800</pubDate>
+    
+    <guid>https://blog.maovlog.com/posts/hugo-cloudstudio/</guid>
+    <description>
+        &lt;p&gt;&lt;img src=&#34;https://blog.maovlog.com/images/code.jpg&#34; alt=&#34;code&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;前言&#34;&gt;
+    &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    前言
+&lt;/h2&gt;
+&lt;p&gt;我的Hogo博客托管在&lt;a href=&#34;https://coding.net&#34;&gt;Coding&lt;/a&gt;，相对来说比在&lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt;速度快很多。&lt;/p&gt;
+&lt;p&gt;Hugo博客跟Hexo差不多先在本地部署好，生成静态文件然后推送到仓库。&lt;/p&gt;
+&lt;p&gt;基本上都是在本地写文章，有时候觉的文章数据在本地，换了部署环境就不能同步保存了。&lt;/p&gt;
+&lt;p&gt;百度找到一篇文章，在Ubuntu 18.04系统中安装和使用Hugo的方法。&lt;/p&gt;
+&lt;p&gt;这样就能通过&lt;a href=&#34;http://cloudstudio.net&#34;&gt;Cloud studio&lt;/a&gt;部署Hogo环境，就能实现在云端写文章了。&lt;/p&gt;
+&lt;h2 id=&#34;部署&#34;&gt;
+    &lt;a href=&#34;#%e9%83%a8%e7%bd%b2&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    部署
+&lt;/h2&gt;
+&lt;p&gt;首先在Coding的&lt;a href=&#34;http://cloudstudio.net&#34;&gt;Cloud studio&lt;/a&gt;创建工作空间，预置环境选择：Ubuntu 18.04&lt;/p&gt;
+&lt;p&gt;然后从apt存储库安装Hugo在Ubuntu 18.04 LTS系统中更新你的系统apt索引并安装Hugo.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$sudo apt-get update  $ sudo apt-get install hugo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;你可以在安装后确认hugo二进制文件的位置&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ which hugo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;/usr/bin/hugo&lt;/p&gt;
+&lt;p&gt;从.deb包安装Hugo在Ubuntu 18.04 LTS系统中&lt;/p&gt;
+&lt;p&gt;首先，从github hugo页面下载最新版本，当前版本是v0.69.2，选择与你的CPU架构匹配的版本：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.54.0_Linux-64bit.deb&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;GitHub可能速度比较慢下面我提供了我国内服务器下载地址：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;wget http://d.chenplus.com/download/hugo_0.69.2_Linux-64bit.deb&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在运行的时候下载命令的时候可能报错。wget: command not found！主要是因为你的系统太干净了，没有安装下载命令的控制器，我们给Ubuntu系统安装个下载命令器即可。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;apt-get install -y wget&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后使用以下命令安装包：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo dpkg -i hugo_0.69.2_Linux-64bit.deb
+
+Selecting previously unselected package hugo.
+
+(Reading database … 187292 files and directories currently installed.)
+
+Preparing to unpack hugo_0.69.2_Linux-64bit.deb …
+
+Unpacking hugo (0.69.2) …
+
+Setting up hugo (0.69.2) …
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果安装成功，你应该能够使用hugo命令：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ hugo --help&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后就可以在Cloud studio 生成博客目录&lt;/p&gt;
+&lt;p&gt;相关代码如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo new site 博客名称
+hugo new posts/文章.md
+hugo server -D
+hugo -D
+cd public
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;hugo通过命令一键部署&#34;&gt;
+    &lt;a href=&#34;#hugo%e9%80%9a%e8%bf%87%e5%91%bd%e4%bb%a4%e4%b8%80%e9%94%ae%e9%83%a8%e7%bd%b2&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    Hugo通过命令一键部署
+&lt;/h2&gt;
+&lt;p&gt;关于Coding现在有个不足之处就是我在 cloudstudio 写完文章以后push到Coding比较麻烦，需要输入好几条命令，下面提供具体操作如下。&lt;/p&gt;
+&lt;p&gt;在hugo目录中新建一个文件夹命名为 deploy.sh，文件内容如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# hugo生成
+hugo
+# cd到构建输出的目录下
+cd public
+# 初始化仓库
+git init
+# 添加
+git add -A
+# 提交
+git commit -m deploy
+# 强制推送到 chenchilde.github.io 仓库的 master 分支
+git push -f git@e.coding.net:chenhonghan/Blog.git master
+# 结束
+cd -
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后每次在写完文章以后，直接运行 &lt;code&gt;bash deploy.sh&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这样就可以了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.maovlog.com/images/Cs1.png&#34; alt=&#34;deploy.sh-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这个是运行记录&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.maovlog.com/images/Cs2.png&#34; alt=&#34;deploy.sh-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;是不是部署很简单，现在这样就可以开始你的云端之旅了。&lt;/strong&gt;  😎&lt;/p&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>快速搭建Hugo博客</title>
+    <link>https://blog.maovlog.com/posts/hugo-blog/</link>
+    <pubDate>Mon, 16 Mar 2020 11:25:05 -0500</pubDate>
+    
+    <guid>https://blog.maovlog.com/posts/hugo-blog/</guid>
+    <description>
+        &lt;p&gt;&lt;img src=&#34;https://blog.maovlog.com/images/hugo-blog.png&#34; alt=&#34;hugo-blog&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;前言&#34;&gt;
+    &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    前言
+&lt;/h2&gt;
+&lt;p&gt;一直以来用了这么多年的&lt;a href=&#34;https://www.lianbaer.com/&#34;&gt;Wordpress&lt;/a&gt;，最近心血来潮，想要重新折腾一番自己的博客。于是想用Hugo搭建。&lt;/p&gt;
+&lt;p&gt;Hugo 是目前比较流行的Go编写的静态网站生成器，速度快，易用，可配置，相比Hexo来说操作更为简单。&lt;/p&gt;
+&lt;p&gt;Hugo 有一个内容和模板目录，把他们渲染到完全的 HTML 网站。可以参照&lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34;&gt;Hugo官网&lt;/a&gt; 搭建自己个人博客。&lt;/p&gt;
+&lt;h2 id=&#34;下载安装hugo&#34;&gt;
+    &lt;a href=&#34;#%e4%b8%8b%e8%bd%bd%e5%ae%89%e8%a3%85hugo&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    下载、安装Hugo
+&lt;/h2&gt;
+&lt;p&gt;这里MAC用户和Windows用户的操作是不同的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MAC用户&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在控制台依次输入&lt;code&gt;$ brew install hugo、$ hugo version&lt;/code&gt; 就可以下载下来了。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows用户&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;下载地址：&lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;https://github.com/spf13/hugo/releases&lt;/a&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;根据自己的操作系统，下载对应的安装包。我的操作系统是Win10 64bit， 选择了&lt;code&gt;hugo_0.69.2_Windows-64bit.zip&lt;/code&gt;。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;解压后只需要把文件夹中hugo.exe文件单独拿出来，放到你预先建立的文件夹里，如你在D盘的software文件夹中建了一个名为hugo的文件夹，则你最后得到的地址为D:\Software\hugo\hugo.exe&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;把D:\Software\hugo\加到环境变量的PATH中，这一步很关键&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重启终端，运行&lt;code&gt;hugo version&lt;/code&gt;查看版本.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;完成以上步骤后，打开命令行输入 &lt;code&gt;hugo help&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果得到如下信息，说明安装成功。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo is the main command, used to build your Hugo site.
+
+Hugo is a Fast and Flexible Static Site Generator
+built with love by spf13 and friends in Go.
+
+Complete documentation is available at http://gohugo.io/.
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;创建一个hugo站点&#34;&gt;
+    &lt;a href=&#34;#%e5%88%9b%e5%bb%ba%e4%b8%80%e4%b8%aahugo%e7%ab%99%e7%82%b9&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    创建一个Hugo站点
+&lt;/h2&gt;
+&lt;p&gt;新建自己博客站点,这里的Blog可以改为你自己设的名称&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo new site Blog&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;得到如下提示创建成功的信息&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Congratulations! Your new Hugo site is created in E:\blog.
+
+Just a few more steps and you&#39;re ready to go:
+
+1. Download a theme into the same-named folder.
+Choose a theme from https://themes.gohugo.io/, or
+create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command.
+2. Perhaps you want to add some content. You can add single files
+with &amp;quot;hugo new &amp;lt;SECTIONNAME&amp;gt;\&amp;lt;FILENAME&amp;gt;.&amp;lt;FORMAT&amp;gt;&amp;quot;.
+3. Start the built-in live server via &amp;quot;hugo server&amp;quot;.
+
+Visit https://gohugo.io/ for quickstart guide and full documentation.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;进入该目录，可以看到自动生成了5个目录和一个配置文件config.toml&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;|-- archetypes
+|-- content   #存放内容的目录
+|-- data      
+|-- layouts   
+|-- static    #存放静态资源（图片,css,js）
+|-- themes    #存放主题
+|-- config.toml  #配置文件
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;添加主题&#34;&gt;
+    &lt;a href=&#34;#%e6%b7%bb%e5%8a%a0%e4%b8%bb%e9%a2%98&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    添加主题
+&lt;/h2&gt;
+&lt;p&gt;添加主题，可以是默认的，也可以是别的主题，这里演示默认的主题，输入下面两行代码&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后从站点的根目录更新git存储库：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git submodule update --remote --merge&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后把默认主题名称添加到配置中，打开config.toml文件进行修改.&lt;/p&gt;
+&lt;h2 id=&#34;新建文章内容&#34;&gt;
+    &lt;a href=&#34;#%e6%96%b0%e5%bb%ba%e6%96%87%e7%ab%a0%e5%86%85%e5%ae%b9&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    新建文章内容
+&lt;/h2&gt;
+&lt;p&gt;新建一个markdown文件，完成博客内容&lt;/p&gt;
+&lt;p&gt;切换到该目录下，然后输入如下命令，会在content的目录下创建post目录，在post目录下创建名为test.md的文件。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd blog &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo new post/test.md&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这个时候默认在posts文件夹下生成了你的第一个博客，现在修改标题，draft改为true，内容可以随意编辑，比如&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+  title: &amp;quot;Hello world!&amp;quot;
+  date: 2020-03-16T11:47:15+08:00
+  draft: true
+ ---
+ ## 大家好
+ 
+  这是我的博客，希望能写一些好的文章分享给大家~~~
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;接着输入如下代码，可以预览你的博客&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo server -D&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;建立静态页面，这里会生成一个public目录，这个目录实际上就是一个网站，我们只需输入如下代码&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo -D&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;把最新的public目录上传到仓库（GitHub，Coding，码云）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;好了这样就大功告成&lt;/strong&gt;    🎉🎉🎉&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这是我自己搭建好的博客网站：&lt;a href=&#34;https://blog.chenplus.com/&#34;&gt;blog.chenplus.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>中文文本测试</title>
+    <link>https://blog.maovlog.com/posts/chinese/</link>
+    <pubDate>Sun, 15 Mar 2020 11:25:05 -0400</pubDate>
+    
+    <guid>https://blog.maovlog.com/posts/chinese/</guid>
+    <description>
+        &lt;p&gt;&lt;img src=&#34;https://blog.maovlog.com/images/chinese.jpg&#34; alt=&#34;chinese&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这样看来， 邓拓在不经意间这样说过，越是没有本领的就越加自命不凡。这不禁令我深思。 我们不得不面对一个非常尴尬的事实，那就是， 一般来说， 所谓中午吃什么，关键是中午吃什么需要如何写。 伏尔泰说过一句富有哲理的话，坚持意志伟大的事业需要始终不渝的精神。这启发了我， 那么， 对我个人而言，中午吃什么不仅仅是一个重大的事件，还可能会改变我的人生。 这样看来， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 一般来讲，我们都必须务必慎重的考虑考虑。 黑格尔说过一句富有哲理的话，只有永远躺在泥坑里的人，才不会再掉进坑里。这启发了我， 我们不得不面对一个非常尴尬的事实，那就是， 既然如何， 在这种困难的抉择下，本人思来想去，寝食难安。&lt;/p&gt;
+&lt;p&gt;　　我认为， 而这些并不是完全重要，更加重要的问题是， 了解清楚中午吃什么到底是一种怎么样的存在，是解决一切问题的关键。 中午吃什么因何而发生？ 而这些并不是完全重要，更加重要的问题是， 卢梭在不经意间这样说过，浪费时间是一桩大罪过。这启发了我， 既然如此， 从这个角度来看， 歌德在不经意间这样说过，意志坚强的人能把世界放在手中像泥块一样任意揉捏。我希望诸位也能好好地体会这句话。 我认为， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 莎士比亚在不经意间这样说过，人的一生是短的，但如果卑劣地过这一生，就太长了。带着这句话，我们还要更加慎重的审视这个问题： 带着这些问题，我们来审视一下中午吃什么。 中午吃什么因何而发生？ 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 布尔沃曾经说过，要掌握书，莫被书掌握；要为生而读，莫为读而生。这似乎解答了我的疑惑。 而这些并不是完全重要，更加重要的问题是， 生活中，若中午吃什么出现了，我们就不得不考虑它出现了的事实。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 带着这些问题，我们来审视一下中午吃什么。 生活中，若中午吃什么出现了，我们就不得不考虑它出现了的事实。 我认为， 一般来说， 中午吃什么，到底应该如何实现。 我们不得不面对一个非常尴尬的事实，那就是， 所谓中午吃什么，关键是中午吃什么需要如何写。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 现在，解决中午吃什么的问题，是非常非常重要的。&lt;/p&gt;
+&lt;p&gt;　　我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 可是，即使是这样，中午吃什么的出现仍然代表了一定的意义。 带着这些问题，我们来审视一下中午吃什么。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我认为， 问题的关键究竟为何？ 非洲曾经提到过，最灵繁的人也看不见自己的背脊。这启发了我， 易卜生说过一句富有哲理的话，伟大的事业，需要决心，能力，组织和责任感。这似乎解答了我的疑惑。 一般来说， 在这种困难的抉择下，本人思来想去，寝食难安。 中午吃什么，到底应该如何实现。 经过上述讨论， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 中午吃什么因何而发生？
+带着这些问题，我们来审视一下中午吃什么。 对我个人而言，中午吃什么不仅仅是一个重大的事件，还可能会改变我的人生。&lt;/p&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>Hello world!</title>
+    <link>https://blog.maovlog.com/posts/helloworld/</link>
+    <pubDate>Sun, 15 Dec 2019 11:25:05 -0500</pubDate>
+    
+    <guid>https://blog.maovlog.com/posts/helloworld/</guid>
+    <description>
+        &lt;p&gt;你好世界，愿这里成为你的一片净土。&lt;/p&gt;
+
+    </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jsdelivr on MaoVlog</title>
+    <link>https://blog.maovlog.com/tags/jsdelivr/</link>
+    <description>Recent content in jsdelivr on MaoVlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 20 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.maovlog.com/tags/jsdelivr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jsdelivr CDN挂了解决方案</title>
+      <link>https://blog.maovlog.com/posts/jsdelivr-cdn-no/</link>
+      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.maovlog.com/posts/jsdelivr-cdn-no/</guid>
+      <description>我几个月没打开博客网站了，突然发现使用的Twikoo评论系统无法显示，发布的哔哔也是！ 找了下原因结果是 jsdelivrCDN加速的库都无法加载了！百度了下才知道已经挂了！(ノ°ο°)ノ
+ 20211220 jsdelivr cdn 挂了，证书过期，导致网站挂了，要想修复它，解决方案如下
+    使用别的cdn临时代替(推荐)  https://unpkg.com/
+   把资源全部下载到本地(不推荐)  可以暂时把所有资源都下载到本地，等待jsdelivr修复完毕再替换回去
+   什么？不会替换？  不管你是前后端分离的项目，还是后端语言搭载模板引擎的传统mvc项目，都可以快速替换。 比如你原本是类似如下格式引入jquery
+1  &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;   你直接替换为如下
+1  &amp;lt;script src=&amp;#34;https://unpkg.com/jquery@3.6.0/dist/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;   简单来说就是把https://cdn.jsdelivr.net/npm/替换为https://unpkg.com/
+目前我托管在github仓库的图床还没找到完美的加速方案！</description>
+    </item>
+    
+  </channel>
+</rss>

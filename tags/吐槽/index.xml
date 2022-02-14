@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>吐槽 on MaoVlog</title>
+    <link>https://blog.maovlog.com/tags/%E5%90%90%E6%A7%BD/</link>
+    <description>Recent content in 吐槽 on MaoVlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 22 Jan 2022 14:53:36 +0800</lastBuildDate><atom:link href="https://blog.maovlog.com/tags/%E5%90%90%E6%A7%BD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>给博客换身皮</title>
+      <link>https://blog.maovlog.com/posts/theme-2022/</link>
+      <pubDate>Sat, 22 Jan 2022 14:53:36 +0800</pubDate>
+      
+      <guid>https://blog.maovlog.com/posts/theme-2022/</guid>
+      <description>春节快来了，顺便把博客更新一下。差不多大半年没更新博客了。
+自从以前的Hexo换成了Hugo，速度真的快了很多，不愧是 “The world’s fastest”。用的主题是 Tania，很简洁、漂亮。Hugo 非常易用，我不喜欢花里胡哨的东西。我所以就选择了这款主题。🌈
+CI 用的是 GitHub Actions:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  name:GitHub Page Deployon:push:branches:- mainjobs:build-deploy:runs-on:ubuntu-20.04steps:- name:Checkout mainuses:actions/checkout@v2- name:Setup Hugouses:peaceiris/actions-hugo@v2with:hugo-version:&amp;#39;0.81.0&amp;#39;# extended: true- name:Build Hugorun:|hugo- name:Deploy Hugo to gh-pagesuses:peaceiris/actions-gh-pages@v2env:ACTIONS_DEPLOY_KEY:${{ secrets.ACTIONS_DEPLOY_KEY }}PUBLISH_BRANCH:gh-pagesPUBLISH_DIR:./public  总之就是非常丝滑，Hugo NB!</description>
+    </item>
+    
+    <item>
+      <title>你好！2021</title>
+      <link>https://blog.maovlog.com/posts/2021/</link>
+      <pubDate>Tue, 16 Feb 2021 16:53:46 +0800</pubDate>
+      
+      <guid>https://blog.maovlog.com/posts/2021/</guid>
+      <description>时间过的真快，现在又是新的一年，终于摔开了不痛快的2020。
+2020真是不幸运的一年，一开始就是疫情的来临。
+让我在家呆了半年，什么事情都没干成，失去的东西也不少。
+开了几年的几十万的奥迪也秒变吉利，老婆的服装店也亏损不少。
+让我欠下一屁股的债和刷爆了信用卡，不少顺心的事也接连不断。
+在这年里面真是让人心态失落，崩溃啊！😕
+现在又到了新的一年，我多的话不想说。
+只希望全家幸福安康，儿子快乐成长，开开心心过好每一天即可。🐂 666</description>
+    </item>
+    
+    <item>
+      <title>吐槽神器—B言B语</title>
+      <link>https://blog.maovlog.com/posts/bb/</link>
+      <pubDate>Sat, 25 Apr 2020 14:53:46 +0800</pubDate>
+      
+      <guid>https://blog.maovlog.com/posts/bb/</guid>
+      <description>在刷博客的时候无意中发现@Daibor大佬的文章写到利用后端 BaaS 快速搭建专属无点赞评论版微博b言b语。原文链接
+我搭建的BB演示👇：bb.ChenPlus.com
+基于LeanCloud 来实现的。前端用 AppID、AppKey 来展示，并把 class 的 create 、delete 、update 三项权限设置为「指定用户」，后端用 MasterKey 来更新，避免数据被更改。
+通过作者提供的index.html 仓库下载文件进行修改配置.
+最后发布更新文章
+ 原作者提供了 iOS 快捷指令 和 win下的 Quicker 模板。这里增加一个 VSCode 的 REST Client 插件更新方法。
+ 新建一个 .http 或 .rest 为后缀的文件：
+1 2 3 4 5 6 7 8  POST https://你的AppID前6位.api.lncldglobal.com/1.1/classes/content X-LC-Id: 你的AppID X-LC-Key: 你的MasterKey,master Content-Type: application/json { &amp;#34;content&amp;#34;:&amp;#34;B言B语&amp;#34; }   写好 content 内容后【右键–Send Request】或快捷键 【Cmd+Alt+R】发布。
+这样大功告成！你就可以尽情的狂言吐槽一番.</description>
+    </item>
+    
+  </channel>
+</rss>

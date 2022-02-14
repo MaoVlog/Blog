@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theme on MaoVlog</title>
+    <link>https://blog.maovlog.com/tags/theme/</link>
+    <description>Recent content in Theme on MaoVlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 22 Jan 2022 14:53:36 +0800</lastBuildDate><atom:link href="https://blog.maovlog.com/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>给博客换身皮</title>
+      <link>https://blog.maovlog.com/posts/theme-2022/</link>
+      <pubDate>Sat, 22 Jan 2022 14:53:36 +0800</pubDate>
+      
+      <guid>https://blog.maovlog.com/posts/theme-2022/</guid>
+      <description>春节快来了，顺便把博客更新一下。差不多大半年没更新博客了。
+自从以前的Hexo换成了Hugo，速度真的快了很多，不愧是 “The world’s fastest”。用的主题是 Tania，很简洁、漂亮。Hugo 非常易用，我不喜欢花里胡哨的东西。我所以就选择了这款主题。🌈
+CI 用的是 GitHub Actions:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  name:GitHub Page Deployon:push:branches:- mainjobs:build-deploy:runs-on:ubuntu-20.04steps:- name:Checkout mainuses:actions/checkout@v2- name:Setup Hugouses:peaceiris/actions-hugo@v2with:hugo-version:&amp;#39;0.81.0&amp;#39;# extended: true- name:Build Hugorun:|hugo- name:Deploy Hugo to gh-pagesuses:peaceiris/actions-gh-pages@v2env:ACTIONS_DEPLOY_KEY:${{ secrets.ACTIONS_DEPLOY_KEY }}PUBLISH_BRANCH:gh-pagesPUBLISH_DIR:./public  总之就是非常丝滑，Hugo NB!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>frp on MaoVlog</title>
+    <link>https://blog.maovlog.com/tags/frp/</link>
+    <description>Recent content in frp on MaoVlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 28 Apr 2020 14:53:46 +0800</lastBuildDate><atom:link href="https://blog.maovlog.com/tags/frp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>frp隐藏CMD窗口运行</title>
+      <link>https://blog.maovlog.com/posts/frp-1/</link>
+      <pubDate>Tue, 28 Apr 2020 14:53:46 +0800</pubDate>
+      
+      <guid>https://blog.maovlog.com/posts/frp-1/</guid>
+      <description>新建一个文本文档在开头处写入
+@echo off if &amp;quot;%1&amp;quot; == &amp;quot;h&amp;quot; goto begin mshta vbscript:createobject(&amp;quot;wscript.shell&amp;quot;).run(&amp;quot;&amp;quot;&amp;quot;%~nx0&amp;quot;&amp;quot; h&amp;quot;,0)(window.close)&amp;amp;&amp;amp;exit :begin REM frpc.exe -c frpc.ini 其中frpc.exe -c frpc.ini为运行命令。 另存为.bat文件，放在frp目录下，双击该bat文件会在屏幕中一闪而过。</description>
+    </item>
+    
+  </channel>
+</rss>

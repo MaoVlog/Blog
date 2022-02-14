@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="dark">
+    <title>用cloud studio来搭建Hugo | MaoVlog</title>
+
+    
+    
+    
+    <meta property="og:site_name" content="Hugo Tania is Amazing" />
+    <meta property="og:title" content="用cloud studio来搭建Hugo | MaoVlog"/>
+    <meta itemprop="name" content="用cloud studio来搭建Hugo | MaoVlog" />
+    <meta name="twitter:title" content="用cloud studio来搭建Hugo | MaoVlog" />
+    <meta name="application-name" content="用cloud studio来搭建Hugo | MaoVlog" /><meta name="twitter:card" content="summary"/>
+
+    <meta name="description" content="Hugo通过cloud studio部署写博客" />
+    <meta name="twitter:description" content="Hugo通过cloud studio部署写博客 "/>
+    <meta itemprop="description" content=" Hugo通过cloud studio部署写博客 "/>
+    <meta property="og:description" content=" Hugo通过cloud studio部署写博客 " />
+
+    
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <link rel="stylesheet" href="/sass/main.min.ab99ff095f832511e24ffb2fba2b51ad473b2f7e9301d674eba2c6c3a6e8bd81.css">
+    <style>
+    :root {
+        --base-font-family: "Noto Serif SC", var(--sys-font-family), var(--zh-font-family);
+    }
+  </style>
+  
+  
+  <script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap";
+  
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+  
+        document.head.appendChild(customFont);
+    }());
+  </script>
+</head>
+    
+    <script>
+        (function() {
+            const colorSchemeKey = 'ThemeColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'ThemeColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.userColorScheme = 'dark';
+        } else {
+            document.documentElement.dataset.userColorScheme = 'light';
+        }
+    })();
+</script>
+
+
+    <body class="dark">
+        <nav class="navbar">
+    <div class="container">
+        <div class="flex">
+            <div>
+                <a class="brand" href="/">
+                    
+                    
+                        <img src="/Logo.png" />
+                    
+                    MaoVlog
+                    </a>
+            </div>
+            <div class="flex">
+                
+                <a href="/about/">关于</a>
+                
+                <a href="/articles/">归档</a>
+                
+                <a href="/tags/">标签</a>
+                
+                
+                    <button id="dark-mode-button">
+                    <svg class="light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M30.312.776C32 19 20 32 .776 30.312c8.199 7.717 21.091 7.588 29.107-.429C37.9 21.867 38.03 8.975 30.312.776z"/><path d="M30.705 15.915a1.163 1.163 0 1 0 1.643 1.641a1.163 1.163 0 0 0-1.643-1.641zm-16.022 14.38a1.74 1.74 0 0 0 0 2.465a1.742 1.742 0 1 0 0-2.465zm13.968-2.147a2.904 2.904 0 0 1-4.108 0a2.902 2.902 0 0 1 0-4.107a2.902 2.902 0 0 1 4.108 0a2.902 2.902 0 0 1 0 4.107z" fill="#FFCC4D"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    <svg class="dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M16 2s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2V2zm18 14s2 0 2 2s-2 2-2 2h-2s-2 0-2-2s2-2 2-2h2zM4 16s2 0 2 2s-2 2-2 2H2s-2 0-2-2s2-2 2-2h2zm5.121-8.707s1.414 1.414 0 2.828s-2.828 0-2.828 0L4.878 8.708s-1.414-1.414 0-2.829c1.415-1.414 2.829 0 2.829 0l1.414 1.414zm21 21s1.414 1.414 0 2.828s-2.828 0-2.828 0l-1.414-1.414s-1.414-1.414 0-2.828s2.828 0 2.828 0l1.414 1.414zm-.413-18.172s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zm-21 21s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zM16 32s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2v-2z"/><circle fill="#FFD983" cx="18" cy="18" r="10"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    </button>
+                
+            </div>
+            </div>
+    </div>
+</nav>
+
+        <main>
+            
+<div class="container">
+    <article>
+        <header class="article-header">
+            <div class="thumb">
+                <div>
+                    <h1>用cloud studio来搭建Hugo</h1>
+                    <div class="post-meta">
+                        <div>
+                            
+                            
+                              
+                            
+                            By 老陳 | <time>April 15, 2020</time>
+                            | 1 minutes
+                        </div>
+                        <div class="tags">
+                            
+                            <a href="/tags/hugo/">Hugo</a>
+                            
+                            <a href="/tags/cloudstudio/">cloudstudio</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </article>
+
+    <div class="article-post">
+    <p><img src="/images/code.jpg" alt="code"></p>
+<h2 id="前言">
+    <a href="#%e5%89%8d%e8%a8%80" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    前言
+</h2>
+<p>我的Hogo博客托管在<a href="https://coding.net">Coding</a>，相对来说比在<a href="https://github.com">Github</a>速度快很多。</p>
+<p>Hugo博客跟Hexo差不多先在本地部署好，生成静态文件然后推送到仓库。</p>
+<p>基本上都是在本地写文章，有时候觉的文章数据在本地，换了部署环境就不能同步保存了。</p>
+<p>百度找到一篇文章，在Ubuntu 18.04系统中安装和使用Hugo的方法。</p>
+<p>这样就能通过<a href="http://cloudstudio.net">Cloud studio</a>部署Hogo环境，就能实现在云端写文章了。</p>
+<h2 id="部署">
+    <a href="#%e9%83%a8%e7%bd%b2" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    部署
+</h2>
+<p>首先在Coding的<a href="http://cloudstudio.net">Cloud studio</a>创建工作空间，预置环境选择：Ubuntu 18.04</p>
+<p>然后从apt存储库安装Hugo在Ubuntu 18.04 LTS系统中更新你的系统apt索引并安装Hugo.</p>
+<p><code>$sudo apt-get update  $ sudo apt-get install hugo</code></p>
+<p>你可以在安装后确认hugo二进制文件的位置</p>
+<p><code>$ which hugo</code></p>
+<p>/usr/bin/hugo</p>
+<p>从.deb包安装Hugo在Ubuntu 18.04 LTS系统中</p>
+<p>首先，从github hugo页面下载最新版本，当前版本是v0.69.2，选择与你的CPU架构匹配的版本：</p>
+<p><code>wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.54.0_Linux-64bit.deb</code></p>
+<p>GitHub可能速度比较慢下面我提供了我国内服务器下载地址：</p>
+<p><code>wget http://d.chenplus.com/download/hugo_0.69.2_Linux-64bit.deb</code></p>
+<p>在运行的时候下载命令的时候可能报错。wget: command not found！主要是因为你的系统太干净了，没有安装下载命令的控制器，我们给Ubuntu系统安装个下载命令器即可。</p>
+<p><code>apt-get install -y wget</code></p>
+<p>然后使用以下命令安装包：</p>
+<pre><code>$ sudo dpkg -i hugo_0.69.2_Linux-64bit.deb
+
+Selecting previously unselected package hugo.
+
+(Reading database … 187292 files and directories currently installed.)
+
+Preparing to unpack hugo_0.69.2_Linux-64bit.deb …
+
+Unpacking hugo (0.69.2) …
+
+Setting up hugo (0.69.2) …
+</code></pre><p>如果安装成功，你应该能够使用hugo命令：</p>
+<p><code>$ hugo --help</code></p>
+<p>然后就可以在Cloud studio 生成博客目录</p>
+<p>相关代码如下：</p>
+<pre><code>hugo new site 博客名称
+hugo new posts/文章.md
+hugo server -D
+hugo -D
+cd public
+</code></pre><h2 id="hugo通过命令一键部署">
+    <a href="#hugo%e9%80%9a%e8%bf%87%e5%91%bd%e4%bb%a4%e4%b8%80%e9%94%ae%e9%83%a8%e7%bd%b2" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    Hugo通过命令一键部署
+</h2>
+<p>关于Coding现在有个不足之处就是我在 cloudstudio 写完文章以后push到Coding比较麻烦，需要输入好几条命令，下面提供具体操作如下。</p>
+<p>在hugo目录中新建一个文件夹命名为 deploy.sh，文件内容如下：</p>
+<pre><code># hugo生成
+hugo
+# cd到构建输出的目录下
+cd public
+# 初始化仓库
+git init
+# 添加
+git add -A
+# 提交
+git commit -m deploy
+# 强制推送到 chenchilde.github.io 仓库的 master 分支
+git push -f git@e.coding.net:chenhonghan/Blog.git master
+# 结束
+cd -
+</code></pre><p>然后每次在写完文章以后，直接运行 <code>bash deploy.sh</code></p>
+<p>这样就可以了。</p>
+<p><img src="/images/Cs1.png" alt="deploy.sh-1"></p>
+<p>这个是运行记录</p>
+<p><img src="/images/Cs2.png" alt="deploy.sh-1"></p>
+<p><strong>是不是部署很简单，现在这样就可以开始你的云端之旅了。</strong>  😎</p>
+
+    </div>
+</div>
+
+<div class="container">
+    
+    <nav class="flex container suggested">
+        
+        <a rel="prev" href="/posts/hugo-blog/" title="Previous post (older)">
+            <span>Previous</span>
+            快速搭建Hugo博客
+            </a>
+        
+        
+        
+        <a rel="next" href="/posts/bokenimei/" title="Next post (newer)">
+            <span>Next</span>
+            你妹，就是这个风格。
+            </a> 
+        
+    </nav>
+    
+</div>
+ 
+<div class="container">
+    
+     <br> <div id="tcomment"></div>
+<script src="https://unpkg.com/twikoo@1.4.18/dist/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'chencloud-1dcd88',
+  el: '#tcomment',
+  region: 'ap-shanghai',
+  path: 'window.location.pathname',
+  lang: 'zh-CN',
+})
+</script>
+
+</div>
+
+</main>
+
+
+        </main>
+        <footer class="footer flex">
+    <section class="container">
+        <nav class="footer-links">
+            
+            <a href="/index.xml">RSS</a>
+            
+        </nav>
+
+        
+    </section>
+    <script defer src="/ts/features.c81551cd4dbef120af278f16966a41142c02be9ff5d6a669be09820fbf047456.js" 
+    data-enable-footnotes="true"
+    ></script>
+</footer>
+
+    </body>
+</html>

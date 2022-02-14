@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>网络应用 on MaoVlog</title>
+    <link>https://blog.maovlog.com/categories/%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8/</link>
+    <description>Recent content in 网络应用 on MaoVlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 22 Jan 2022 14:53:36 +0800</lastBuildDate><atom:link href="https://blog.maovlog.com/categories/%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>给博客换身皮</title>
+      <link>https://blog.maovlog.com/posts/theme-2022/</link>
+      <pubDate>Sat, 22 Jan 2022 14:53:36 +0800</pubDate>
+      
+      <guid>https://blog.maovlog.com/posts/theme-2022/</guid>
+      <description>春节快来了，顺便把博客更新一下。差不多大半年没更新博客了。
+自从以前的Hexo换成了Hugo，速度真的快了很多，不愧是 “The world’s fastest”。用的主题是 Tania，很简洁、漂亮。Hugo 非常易用，我不喜欢花里胡哨的东西。我所以就选择了这款主题。🌈
+CI 用的是 GitHub Actions:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  name:GitHub Page Deployon:push:branches:- mainjobs:build-deploy:runs-on:ubuntu-20.04steps:- name:Checkout mainuses:actions/checkout@v2- name:Setup Hugouses:peaceiris/actions-hugo@v2with:hugo-version:&amp;#39;0.81.0&amp;#39;# extended: true- name:Build Hugorun:|hugo- name:Deploy Hugo to gh-pagesuses:peaceiris/actions-gh-pages@v2env:ACTIONS_DEPLOY_KEY:${{ secrets.ACTIONS_DEPLOY_KEY }}PUBLISH_BRANCH:gh-pagesPUBLISH_DIR:./public  总之就是非常丝滑，Hugo NB!</description>
+    </item>
+    
+    <item>
+      <title>frp隐藏CMD窗口运行</title>
+      <link>https://blog.maovlog.com/posts/frp-1/</link>
+      <pubDate>Tue, 28 Apr 2020 14:53:46 +0800</pubDate>
+      
+      <guid>https://blog.maovlog.com/posts/frp-1/</guid>
+      <description>新建一个文本文档在开头处写入
+@echo off if &amp;quot;%1&amp;quot; == &amp;quot;h&amp;quot; goto begin mshta vbscript:createobject(&amp;quot;wscript.shell&amp;quot;).run(&amp;quot;&amp;quot;&amp;quot;%~nx0&amp;quot;&amp;quot; h&amp;quot;,0)(window.close)&amp;amp;&amp;amp;exit :begin REM frpc.exe -c frpc.ini 其中frpc.exe -c frpc.ini为运行命令。 另存为.bat文件，放在frp目录下，双击该bat文件会在屏幕中一闪而过。</description>
+    </item>
+    
+    <item>
+      <title>吐槽神器—B言B语</title>
+      <link>https://blog.maovlog.com/posts/bb/</link>
+      <pubDate>Sat, 25 Apr 2020 14:53:46 +0800</pubDate>
+      
+      <guid>https://blog.maovlog.com/posts/bb/</guid>
+      <description>在刷博客的时候无意中发现@Daibor大佬的文章写到利用后端 BaaS 快速搭建专属无点赞评论版微博b言b语。原文链接
+我搭建的BB演示👇：bb.ChenPlus.com
+基于LeanCloud 来实现的。前端用 AppID、AppKey 来展示，并把 class 的 create 、delete 、update 三项权限设置为「指定用户」，后端用 MasterKey 来更新，避免数据被更改。
+通过作者提供的index.html 仓库下载文件进行修改配置.
+最后发布更新文章
+ 原作者提供了 iOS 快捷指令 和 win下的 Quicker 模板。这里增加一个 VSCode 的 REST Client 插件更新方法。
+ 新建一个 .http 或 .rest 为后缀的文件：
+1 2 3 4 5 6 7 8  POST https://你的AppID前6位.api.lncldglobal.com/1.1/classes/content X-LC-Id: 你的AppID X-LC-Key: 你的MasterKey,master Content-Type: application/json { &amp;#34;content&amp;#34;:&amp;#34;B言B语&amp;#34; }   写好 content 内容后【右键–Send Request】或快捷键 【Cmd+Alt+R】发布。
+这样大功告成！你就可以尽情的狂言吐槽一番.</description>
+    </item>
+    
+    <item>
+      <title>用cloud studio来搭建Hugo</title>
+      <link>https://blog.maovlog.com/posts/hugo-cloudstudio/</link>
+      <pubDate>Wed, 15 Apr 2020 14:53:46 +0800</pubDate>
+      
+      <guid>https://blog.maovlog.com/posts/hugo-cloudstudio/</guid>
+      <description>前言  我的Hogo博客托管在Coding，相对来说比在Github速度快很多。
+Hugo博客跟Hexo差不多先在本地部署好，生成静态文件然后推送到仓库。
+基本上都是在本地写文章，有时候觉的文章数据在本地，换了部署环境就不能同步保存了。
+百度找到一篇文章，在Ubuntu 18.04系统中安装和使用Hugo的方法。
+这样就能通过Cloud studio部署Hogo环境，就能实现在云端写文章了。
+   部署  首先在Coding的Cloud studio创建工作空间，预置环境选择：Ubuntu 18.04
+然后从apt存储库安装Hugo在Ubuntu 18.04 LTS系统中更新你的系统apt索引并安装Hugo.
+$sudo apt-get update $ sudo apt-get install hugo
+你可以在安装后确认hugo二进制文件的位置
+$ which hugo
+/usr/bin/hugo
+从.deb包安装Hugo在Ubuntu 18.04 LTS系统中
+首先，从github hugo页面下载最新版本，当前版本是v0.69.2，选择与你的CPU架构匹配的版本：
+wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.54.0_Linux-64bit.deb
+GitHub可能速度比较慢下面我提供了我国内服务器下载地址：
+wget http://d.chenplus.com/download/hugo_0.69.2_Linux-64bit.deb
+在运行的时候下载命令的时候可能报错。wget: command not found！主要是因为你的系统太干净了，没有安装下载命令的控制器，我们给Ubuntu系统安装个下载命令器即可。
+apt-get install -y wget
+然后使用以下命令安装包：
+$ sudo dpkg -i hugo_0.69.2_Linux-64bit.deb Selecting previously unselected package hugo. (Reading database … 187292 files and directories currently installed.</description>
+    </item>
+    
+    <item>
+      <title>快速搭建Hugo博客</title>
+      <link>https://blog.maovlog.com/posts/hugo-blog/</link>
+      <pubDate>Mon, 16 Mar 2020 11:25:05 -0500</pubDate>
+      
+      <guid>https://blog.maovlog.com/posts/hugo-blog/</guid>
+      <description>前言  一直以来用了这么多年的Wordpress，最近心血来潮，想要重新折腾一番自己的博客。于是想用Hugo搭建。
+Hugo 是目前比较流行的Go编写的静态网站生成器，速度快，易用，可配置，相比Hexo来说操作更为简单。
+Hugo 有一个内容和模板目录，把他们渲染到完全的 HTML 网站。可以参照Hugo官网 搭建自己个人博客。
+   下载、安装Hugo  这里MAC用户和Windows用户的操作是不同的。
+ MAC用户  在控制台依次输入$ brew install hugo、$ hugo version 就可以下载下来了。
+ Windows用户   下载地址：https://github.com/spf13/hugo/releases。  根据自己的操作系统，下载对应的安装包。我的操作系统是Win10 64bit， 选择了hugo_0.69.2_Windows-64bit.zip。
+ 解压后只需要把文件夹中hugo.exe文件单独拿出来，放到你预先建立的文件夹里，如你在D盘的software文件夹中建了一个名为hugo的文件夹，则你最后得到的地址为D:\Software\hugo\hugo.exe
+  把D:\Software\hugo\加到环境变量的PATH中，这一步很关键
+  重启终端，运行hugo version查看版本.
+  完成以上步骤后，打开命令行输入 hugo help
+如果得到如下信息，说明安装成功。
+hugo is the main command, used to build your Hugo site. Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go.</description>
+    </item>
+    
+  </channel>
+</rss>
