@@ -106,8 +106,7 @@
 
         <main>
             
-
-<div class="container" xmlns="http://www.w3.org/1999/html">
+<div class="container">
     <article>
         <header class="article-header">
             <div class="thumb">
@@ -115,9 +114,12 @@
                     <h1>吐槽神器—B言B语</h1>
                     <div class="post-meta">
                         <div>
-                            By  on
-                            <time>April 25, 2020</time>
-                            <span id="busuanzi_container_page_pv" style='display:none'> | <span id="busuanzi_value_page_pv"></span> Hits</span>
+                            
+                            
+                              
+                            
+                            By 老陳 | <time>April 25, 2020</time>
+                            | 1 minutes
                         </div>
                         <div class="tags">
                             
@@ -132,51 +134,8 @@
         </header>
     </article>
 
-    <div id="backTop" onclick="backTopFunction()" style="right: 40px; bottom: 40px;">
-        <svg xmlns='http://www.w3.org/2000/svg' height="30" width="20" viewBox='0 0 512 512'><title>Caret Up</title>
-            <path d='M414 321.94L274.22 158.82a24 24 0 00-36.44 0L98 321.94c-13.34 15.57-2.28 39.62 18.22 39.62h279.6c20.5 0 31.56-24.05 18.18-39.62z' fill="#adb5bd"/>
-        </svg>
-        <style type="text/css">
-            #backTop {
-                position: fixed;
-                background-color: #fff;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                display: none;
-                align-items: center;
-                justify-content: center;
-                box-shadow: 0 0 6px rgba(0,0,0,.12);
-                cursor: pointer;
-                z-index: 5;
-            }
-
-            #backTop:hover {
-                background-color: #f1f4f8;
-            }
-        </style>
-        <script>
-            
-            window.onscroll = function() {scrollFunction()};
-
-            function scrollFunction() {console.log(121);
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("backTop").style.display = "flex";
-                } else {
-                    document.getElementById("backTop").style.display = "none";
-                }
-            }
-
-            
-            function backTopFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
-    </div>
-
     <div class="article-post">
-        <p><img src="/images/bb.jpg" alt="bb"></p>
+    <p><img src="/images/bb.jpg" alt="bb"></p>
 <p>在刷博客的时候无意中发现@Daibor大佬的文章写到利用后端 BaaS 快速搭建专属无点赞评论版微博b言b语。<a href="https://sspai.com/post/60024">原文链接</a></p>
 <p>我搭建的BB演示👇：<a href="http://bb.ChenPlus.com">bb.ChenPlus.com</a></p>
 <p>基于LeanCloud 来实现的。前端用 AppID、AppKey 来展示，并把 class 的 create 、delete 、update 三项权限设置为「指定用户」，后端用 MasterKey 来更新，避免数据被更改。</p>
@@ -221,18 +180,36 @@
         <a rel="prev" href="/posts/bokenimei/" title="Previous post (older)">
             <span>Previous</span>
             你妹，就是这个风格。
-        </a>
+            </a>
         
-
+        
         
         <a rel="next" href="/posts/frp-1/" title="Next post (newer)">
             <span>Next</span>
             frp隐藏CMD窗口运行
-        </a>
+            </a> 
         
     </nav>
     
 </div>
+ 
+<div class="container">
+    
+     <br> <div id="tcomment"></div>
+<script src="https://unpkg.com/twikoo@1.5.0/dist/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'chencloud-1dcd88',
+  el: '#tcomment',
+  region: 'ap-shanghai',
+  path: 'window.location.pathname',
+  lang: 'zh-CN',
+})
+</script>
+
+
+</div>
+
 </main>
 
 

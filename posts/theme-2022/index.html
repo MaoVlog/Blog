@@ -106,8 +106,7 @@
 
         <main>
             
-
-<div class="container" xmlns="http://www.w3.org/1999/html">
+<div class="container">
     <article>
         <header class="article-header">
             <div class="thumb">
@@ -115,9 +114,12 @@
                     <h1>给博客换身皮</h1>
                     <div class="post-meta">
                         <div>
-                            By  on
-                            <time>January 22, 2022</time>
-                            <span id="busuanzi_container_page_pv" style='display:none'> | <span id="busuanzi_value_page_pv"></span> Hits</span>
+                            
+                            
+                              
+                            
+                            By 老陳 | <time>January 22, 2022</time>
+                            | 1 minutes
                         </div>
                         <div class="tags">
                             
@@ -136,51 +138,8 @@
         </header>
     </article>
 
-    <div id="backTop" onclick="backTopFunction()" style="right: 40px; bottom: 40px;">
-        <svg xmlns='http://www.w3.org/2000/svg' height="30" width="20" viewBox='0 0 512 512'><title>Caret Up</title>
-            <path d='M414 321.94L274.22 158.82a24 24 0 00-36.44 0L98 321.94c-13.34 15.57-2.28 39.62 18.22 39.62h279.6c20.5 0 31.56-24.05 18.18-39.62z' fill="#adb5bd"/>
-        </svg>
-        <style type="text/css">
-            #backTop {
-                position: fixed;
-                background-color: #fff;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                display: none;
-                align-items: center;
-                justify-content: center;
-                box-shadow: 0 0 6px rgba(0,0,0,.12);
-                cursor: pointer;
-                z-index: 5;
-            }
-
-            #backTop:hover {
-                background-color: #f1f4f8;
-            }
-        </style>
-        <script>
-            
-            window.onscroll = function() {scrollFunction()};
-
-            function scrollFunction() {console.log(121);
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("backTop").style.display = "flex";
-                } else {
-                    document.getElementById("backTop").style.display = "none";
-                }
-            }
-
-            
-            function backTopFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
-    </div>
-
     <div class="article-post">
-        <p>春节快来了，顺便把博客更新一下。差不多大半年没更新博客了。</p>
+    <p>春节快来了，顺便把博客更新一下。差不多大半年没更新博客了。</p>
 <p>自从以前的Hexo换成了Hugo，速度真的快了很多，不愧是 “The world’s fastest”。用的主题是 <a href="https://github.com/WingLim/hugo-tania">Tania</a>，很简洁、漂亮。Hugo 非常易用，我不喜欢花里胡哨的东西。我所以就选择了这款主题。🌈</p>
 <p>CI 用的是 GitHub Actions:</p>
 <div class="highlight"><div class="chroma">
@@ -255,13 +214,31 @@
         <a rel="prev" href="/posts/jsdelivr-cdn-no/" title="Previous post (older)">
             <span>Previous</span>
             jsdelivr CDN挂了解决方案
-        </a>
+            </a>
         
-
+        
         
     </nav>
     
 </div>
+ 
+<div class="container">
+    
+     <br> <div id="tcomment"></div>
+<script src="https://unpkg.com/twikoo@1.5.0/dist/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'chencloud-1dcd88',
+  el: '#tcomment',
+  region: 'ap-shanghai',
+  path: 'window.location.pathname',
+  lang: 'zh-CN',
+})
+</script>
+
+
+</div>
+
 </main>
 
 
