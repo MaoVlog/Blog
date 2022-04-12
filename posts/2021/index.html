@@ -106,7 +106,8 @@
 
         <main>
             
-<div class="container">
+
+<div class="container" xmlns="http://www.w3.org/1999/html">
     <article>
         <header class="article-header">
             <div class="thumb">
@@ -114,12 +115,9 @@
                     <h1>你好！2021</h1>
                     <div class="post-meta">
                         <div>
-                            
-                            
-                              
-                            
-                            By 老陳 | <time>February 16, 2021</time>
-                            | 1 minutes
+                            By  on
+                            <time>February 16, 2021</time>
+                            <span id="busuanzi_container_page_pv" style='display:none'> | <span id="busuanzi_value_page_pv"></span> Hits</span>
                         </div>
                         <div class="tags">
                             
@@ -138,8 +136,51 @@
         </header>
     </article>
 
+    <div id="backTop" onclick="backTopFunction()" style="right: 40px; bottom: 40px;">
+        <svg xmlns='http://www.w3.org/2000/svg' height="30" width="20" viewBox='0 0 512 512'><title>Caret Up</title>
+            <path d='M414 321.94L274.22 158.82a24 24 0 00-36.44 0L98 321.94c-13.34 15.57-2.28 39.62 18.22 39.62h279.6c20.5 0 31.56-24.05 18.18-39.62z' fill="#adb5bd"/>
+        </svg>
+        <style type="text/css">
+            #backTop {
+                position: fixed;
+                background-color: #fff;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 0 6px rgba(0,0,0,.12);
+                cursor: pointer;
+                z-index: 5;
+            }
+
+            #backTop:hover {
+                background-color: #f1f4f8;
+            }
+        </style>
+        <script>
+            
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {console.log(121);
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("backTop").style.display = "flex";
+                } else {
+                    document.getElementById("backTop").style.display = "none";
+                }
+            }
+
+            
+            function backTopFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </div>
+
     <div class="article-post">
-    <p>时间过的真快，现在又是新的一年，终于抛开了不痛快的2020。</p>
+        <p>时间过的真快，现在又是新的一年，终于抛开了不痛快的2020。</p>
 <p>2020真是不幸运的一年，一开始就是疫情的来临。</p>
 <p>让我在家呆了半年，什么事情都没干成，失去的东西也不少。</p>
 <p>开了几年的几十万的奥迪也秒变吉利，老婆的服装店也亏损不少。</p>
@@ -158,36 +199,18 @@
         <a rel="prev" href="/posts/duanwu/" title="Previous post (older)">
             <span>Previous</span>
             端午节
-            </a>
+        </a>
         
-        
+
         
         <a rel="next" href="/posts/jsdelivr-cdn-no/" title="Next post (newer)">
             <span>Next</span>
             jsdelivr CDN挂了解决方案
-            </a> 
+        </a>
         
     </nav>
     
 </div>
- 
-<div class="container">
-    
-     <br> <div id="tcomment"></div>
-<script src="https://unpkg.com/twikoo@1.5.0/dist/twikoo.all.min.js"></script>
-<script>
-twikoo.init({
-  envId: 'chencloud-1dcd88',
-  el: '#tcomment',
-  region: 'ap-shanghai',
-  path: 'window.location.pathname',
-  lang: 'zh-CN',
-})
-</script>
-
-
-</div>
-
 </main>
 
 
