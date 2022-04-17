@@ -29,7 +29,7 @@
 {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 {{ $projects := where .Site.RegularPages "Section" "projects" }}
 {{ $pages = .Paginate ($pages)  }}
-{{ $archivesPage := first 1 (where .Site.RegularPages "Layout" "eq" "archives") }}
+
 
 <div class="container">
     <section>
