@@ -1,6 +1,6 @@
 baseurl: "https://blog.maovlog.com"
 languageCode: "zh-cn"
-title: "MaoVlog"
+title: "老陳网志"
 theme: "hugo-tania"
 paginate: 10
 
