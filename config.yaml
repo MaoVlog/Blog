@@ -17,8 +17,8 @@ params:
   # Default to true
   enableFootnotes: true
   
-  siteName: "Hugo Tania is Amazing"
-  siteDesc: "Hugo is Absurdly Fast!"
+  siteName: "手帳 &ノート"
+  siteDesc: "手帳 &ノート"
   author: "老陳"
 
   colorScheme:
