@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>jsdelivr on MaoVlog</title>
+    <title>jsdelivr on 老陳网志</title>
     <link>https://blog.maovlog.com/tags/jsdelivr/</link>
-    <description>Recent content in jsdelivr on MaoVlog</description>
+    <description>Recent content in jsdelivr on 老陳网志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 20 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.maovlog.com/tags/jsdelivr/index.xml" rel="self" type="application/rss+xml" />
