@@ -1,6 +1,7 @@
 ---
 title: "端午节"
 date: 2020-06-24T13:53:46+08:00
+description: 端阳节中国四大传统节日
 featured_image: "/images/duanwu.jpeg"
 categories: 生活随笔
 tags: [节日,美食]
