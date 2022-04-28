@@ -2,6 +2,7 @@
 title: "frp隐藏CMD窗口运行"
 date: 2020-04-28T14:53:46+08:00
 featured_image: "/images/code1.jpg"
+description: 亲测有效~
 categories: 网络应用
 tags: [frp,CMD]
 ---
