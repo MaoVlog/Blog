@@ -41,7 +41,7 @@
     <meta property="og:description" content="{{ if .Description }} {{.Description}} {{ else }}{{.Site.Params.siteDesc}}{{ end }}" />
 
     {{ partial "post-meta.html" . }}
-
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}" />
     {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
