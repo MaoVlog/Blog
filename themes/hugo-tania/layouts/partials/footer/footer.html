@@ -5,7 +5,8 @@
             <a href="{{ .URL | relURL }}">{{ .Name }}</a>
             {{ end }}
         </nav>
-
+        <span id="busuanzi_container_site_pv" style='display:none'>总浏览数: <span id="busuanzi_value_site_pv"></span>次</span>
+        <span id="busuanzi_container_site_uv" style='display:none'> | 总访客数: <span id="busuanzi_value_site_uv"></span>人次</span>
         {{ partialCached "footer/custom" . }}
     </section>
     {{- if and (or .Params.mathjax (and .Site.Params.mathjax (ne .Params.mathjax false))) (or .IsPage .IsHome) }}
