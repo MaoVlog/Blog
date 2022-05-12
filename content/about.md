@@ -19,6 +19,7 @@ Email：`YWRtaW5AY2hlbnBsdXMuY29t`- 私密 (Tip:BASE64)
 ## 链接
 
 - [NAS](https://nas.chenplus.com/)
+- [相册](http://chenyyds.lofter.com//)
 - [网盘](https://pan.maovlog.com/)
 - [设若](https://sheruo.com/)
 - [清水无鱼](https://bosir.cn/)
