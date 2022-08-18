@@ -55,7 +55,7 @@ params:
     provider: twikoo
 
     twikoo:
-        id: chencloud-1dcd88
+        id: https://twikoo-chenyyds.vercel.app
         # 默认 ap-shanghai
         region:
         # 默认 window.location.pathname
