@@ -55,7 +55,7 @@ params:
     provider: twikoo
 
     twikoo:
-        id: https://twikoo.chenplus.com
+        id: https://twikoo.chenyyds.com
         # 默认 ap-shanghai
         region:
         # 默认 window.location.pathname
