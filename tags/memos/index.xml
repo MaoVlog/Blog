@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>微博 on 老陳网志</title>
-    <link>https://blog.maovlog.com/tags/%E5%BE%AE%E5%8D%9A/</link>
-    <description>Recent content in 微博 on 老陳网志</description>
+    <title>memos on 老陳网志</title>
+    <link>https://blog.maovlog.com/tags/memos/</link>
+    <description>Recent content in memos on 老陳网志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.maovlog.com/tags/%E5%BE%AE%E5%8D%9A/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.maovlog.com/tags/memos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Memos备忘录，记录瞬间想法</title>
       <link>https://blog.maovlog.com/posts/memos-bber/</link>
@@ -32,39 +32,6 @@
 &lt;p&gt;对于我来说好不容易找到一个记录短文的平台就这么失去了。苦恼啊~😶‍🌫️&lt;/p&gt;
 &lt;p&gt;嘿~他来了。 又发现一个好玩的应用。&lt;code&gt; Memos&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;一个开源的、自托管的知识库。应用UI简洁，没有太多花里胡哨的功能，非常适合日常记录各种一闪而过的想法。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>你好！2021</title>
-      <link>https://blog.maovlog.com/posts/2021/</link>
-      <pubDate>Tue, 16 Feb 2021 16:53:46 +0800</pubDate>
-      
-      <guid>https://blog.maovlog.com/posts/2021/</guid>
-      <description>时间过的真快，现在又是新的一年，终于抛开了不痛快的2020。
-2020真是不幸运的一年，一开始就是疫情的来临。
-让我在家呆了半年，什么事情都没干成，失去的东西也不少。
-开了几年的几十万的奥迪也秒变吉利，老婆的服装店也亏损不少。
-让我欠下一屁股的债和刷爆了信用卡，不少顺心的事也接连不断。
-在这年里面真是让人心态失落，崩溃啊！😕
-现在又到了新的一年，我多的话不想说。
-只希望全家幸福安康，儿子快乐成长，开开心心过好每一天即可。🐂 666</description>
-    </item>
-    
-    <item>
-      <title>吐槽神器—B言B语</title>
-      <link>https://blog.maovlog.com/posts/bb/</link>
-      <pubDate>Sat, 25 Apr 2020 14:53:46 +0800</pubDate>
-      
-      <guid>https://blog.maovlog.com/posts/bb/</guid>
-      <description>在刷博客的时候无意中发现@Daibor大佬的文章写到利用后端 BaaS 快速搭建专属无点赞评论版微博b言b语。原文链接
-我搭建的BB演示👇：bb.ChenPlus.com
-基于LeanCloud 来实现的。前端用 AppID、AppKey 来展示，并把 class 的 create 、delete 、update 三项权限设置为「指定用户」，后端用 MasterKey 来更新，避免数据被更改。
-通过作者提供的index.html 仓库下载文件进行修改配置.
-最后发布更新文章
- 原作者提供了 iOS 快捷指令 和 win下的 Quicker 模板。这里增加一个 VSCode 的 REST Client 插件更新方法。
- 新建一个 .http 或 .rest 为后缀的文件：
-1 2 3 4 5 6 7 8  POST https://你的AppID前6位.api.lncldglobal.com/1.1/classes/content X-LC-Id: 你的AppID X-LC-Key: 你的MasterKey,master Content-Type: application/json { &amp;#34;content&amp;#34;:&amp;#34;B言B语&amp;#34; }   写好 content 内容后【右键–Send Request】或快捷键 【Cmd+Alt+R】发布。
-这样大功告成！你就可以尽情的狂言吐槽一番.</description>
     </item>
     
   </channel>

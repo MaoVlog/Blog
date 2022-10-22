@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="dark">
+    <title>Memos备忘录，记录瞬间想法 | 老陳网志</title>
+
+    
+    
+    
+    <meta property="og:site_name" content="手帳 &amp;ノート" />
+    <meta property="og:title" content="Memos备忘录，记录瞬间想法 | 老陳网志"/>
+    <meta itemprop="name" content="Memos备忘录，记录瞬间想法 | 老陳网志" />
+    <meta name="twitter:title" content="Memos备忘录，记录瞬间想法 | 老陳网志" />
+    <meta name="application-name" content="Memos备忘录，记录瞬间想法 | 老陳网志" /><meta name="twitter:card" content="summary"/>
+
+    <meta name="description" content="搭建一个碎片化知识卡片管理工具——Memos" />
+    <meta name="twitter:description" content="搭建一个碎片化知识卡片管理工具——Memos "/>
+    <meta itemprop="description" content=" 搭建一个碎片化知识卡片管理工具——Memos "/>
+    <meta property="og:description" content=" 搭建一个碎片化知识卡片管理工具——Memos " />
+
+    
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <link rel="stylesheet" href="/sass/main.min.ab99ff095f832511e24ffb2fba2b51ad473b2f7e9301d674eba2c6c3a6e8bd81.css">
+    <style>
+    :root {
+        --base-font-family: "Noto Serif SC", var(--sys-font-family), var(--zh-font-family);
+    }
+  </style>
+  
+  
+  <script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap";
+  
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+  
+        document.head.appendChild(customFont);
+    }());
+  </script>
+</head>
+
+    
+    <script>
+        (function() {
+            const colorSchemeKey = 'ThemeColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'ThemeColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.userColorScheme = 'dark';
+        } else {
+            document.documentElement.dataset.userColorScheme = 'light';
+        }
+    })();
+</script>
+
+
+    <body class="dark">
+        <nav class="navbar">
+    <div class="container">
+        <div class="flex">
+            <div>
+                <a class="brand" href="/">
+                    
+                    
+                        <img src="/Logo.png" />
+                    
+                    老陳网志
+                    </a>
+            </div>
+            <div class="flex">
+                
+                <a href="/about/">关于</a>
+                
+                <a href="/articles/">归档</a>
+                
+                <a href="/tags/">标签</a>
+                
+                
+                    <button id="dark-mode-button">
+                    <svg class="light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M30.312.776C32 19 20 32 .776 30.312c8.199 7.717 21.091 7.588 29.107-.429C37.9 21.867 38.03 8.975 30.312.776z"/><path d="M30.705 15.915a1.163 1.163 0 1 0 1.643 1.641a1.163 1.163 0 0 0-1.643-1.641zm-16.022 14.38a1.74 1.74 0 0 0 0 2.465a1.742 1.742 0 1 0 0-2.465zm13.968-2.147a2.904 2.904 0 0 1-4.108 0a2.902 2.902 0 0 1 0-4.107a2.902 2.902 0 0 1 4.108 0a2.902 2.902 0 0 1 0 4.107z" fill="#FFCC4D"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    <svg class="dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M16 2s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2V2zm18 14s2 0 2 2s-2 2-2 2h-2s-2 0-2-2s2-2 2-2h2zM4 16s2 0 2 2s-2 2-2 2H2s-2 0-2-2s2-2 2-2h2zm5.121-8.707s1.414 1.414 0 2.828s-2.828 0-2.828 0L4.878 8.708s-1.414-1.414 0-2.829c1.415-1.414 2.829 0 2.829 0l1.414 1.414zm21 21s1.414 1.414 0 2.828s-2.828 0-2.828 0l-1.414-1.414s-1.414-1.414 0-2.828s2.828 0 2.828 0l1.414 1.414zm-.413-18.172s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zm-21 21s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zM16 32s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2v-2z"/><circle fill="#FFD983" cx="18" cy="18" r="10"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    </button>
+                
+            </div>
+            </div>
+    </div>
+</nav>
+
+        <main>
+            
+<div class="container">
+    <article>
+        <header class="article-header">
+            <div class="thumb">
+                <div>
+                    <h1>Memos备忘录，记录瞬间想法</h1>
+                    <div class="post-meta">
+                        <div>
+                            
+                            
+                              
+                            
+                            By 老陳 | <time>October 09, 2022</time>
+                            | 1 minutes
+                        </div>
+                        <div class="tags">
+                            
+                            <a href="/tags/%E5%90%90%E6%A7%BD/">吐槽</a>
+                            
+                            <a href="/tags/%E5%BE%AE%E5%8D%9A/">微博</a>
+                            
+                            <a href="/tags/memos/">memos</a>
+                            
+                            <a href="/tags/%E8%AF%B4%E8%AF%B4/">说说</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </article>
+<div id="backTop" onclick="backTopFunction()" style="right: 40px; bottom: 40px;">
+        <svg xmlns='http://www.w3.org/2000/svg' height="30" width="20" viewBox='0 0 512 512'><title>Caret Up</title>
+            <path d='M414 321.94L274.22 158.82a24 24 0 00-36.44 0L98 321.94c-13.34 15.57-2.28 39.62 18.22 39.62h279.6c20.5 0 31.56-24.05 18.18-39.62z' fill="#adb5bd"/>
+        </svg>
+        <style type="text/css">
+            #backTop {
+                position: fixed;
+                background-color: #fff;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 0 6px rgba(0,0,0,.12);
+                cursor: pointer;
+                z-index: 5;
+            }
+
+            #backTop:hover {
+                background-color: #f1f4f8;
+            }
+        </style>
+        <script>
+            
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {console.log(121);
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("backTop").style.display = "flex";
+                } else {
+                    document.getElementById("backTop").style.display = "none";
+                }
+            }
+
+            
+            function backTopFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </div>
+    <div class="article-post">
+    <p><img src="https://chenyyds.com/images/memos.png" alt=""></p>
+<h2 id="前言">
+    <a href="#%e5%89%8d%e8%a8%80" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    前言
+</h2>
+<p>我经常会记录一些生活上点点滴滴及吐槽自己的闲言闲语。</p>
+<p>旦又不喜欢像写博客的形式来长篇论文。我其实很懒散，不爱更新博客。</p>
+<p>之前在少数派中发现了@daibor 利用BaaS快速搭建无点赞评论版类似于微博。成功的搭建了：<a href="http://bb.chenplus.com">B言B语</a></p>
+<p>最后发现@木木大佬的 <a href="https://immmmm.com/bb-by-wechat-pro/">「哔哔点啥」微信公众号 2.0</a> 按照教程微信公众号也部署成功。</p>
+<p>因为「哔哔点啥」他的后端及微信公众号都是通过腾讯CloudBase来进行部署的。直到今年的某月分，CloudBase不再进行免费。</p>
+<p>对于我来说好不容易找到一个记录短文的平台就这么失去了。苦恼啊~😶‍🌫️</p>
+<p>嘿~他来了。 又发现一个好玩的应用。<code> Memos</code></p>
+<p>一个开源的、自托管的知识库。应用UI简洁，没有太多花里胡哨的功能，非常适合日常记录各种一闪而过的想法。</p>
+<h2 id="介绍">
+    <a href="#%e4%bb%8b%e7%bb%8d" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    介绍
+</h2>
+<p>1.1 有啥用？</p>
+<ul>
+<li>📅 方便记录每日 / 周计划</li>
+<li>💡 方便记录一些奇思妙想</li>
+<li>📕 可以随手写写读后感</li>
+<li>🏗️有时候可以代替在微信上经常使用的“文件传输助手”、手机的备忘录</li>
+<li>📒 可以打造一个属于自己的轻量化“卡片”笔记簿</li>
+</ul>
+<p>1.2 有啥特点？</p>
+<ul>
+<li>✨ 免费、开源项目！</li>
+<li>😋 颜值高！UI非常的大气、漂亮！</li>
+<li>📑 交互逻辑体验优秀！</li>
+<li>👫 支持中文！支持多用户！</li>
+<li>⚡ 支持Docker快速部署！</li>
+<li>🚀 目前正在全力开发中，之后会有更多功能……</li>
+</ul>
+<p>相关地址</p>
+<p>官方Demo：<a href="https://demo.usememos.com/">https://demo.usememos.com/</a></p>
+<p>GitHub地址：<a href="https://github.com/usememos/memos">https://github.com/usememos/memos</a></p>
+<h2 id="部署">
+    <a href="#%e9%83%a8%e7%bd%b2" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    部署
+</h2>
+<p>使用 Docker 部署创建并启动容器，镜像里包含所需的所有环境。只需自行 pull + run，即可完成部署。</p>
+<pre><code>docker run \
+  --name memos \
+  --publish 5230:5230 \
+  --volume ~/.memos/:/var/opt/memos \
+  neosmemo/memos:latest \
+  --mode prod \
+  --port 5230
+  
+</code></pre><h4 id="docker-compose">
+    <a href="#docker-compose" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    Docker Compose
+</h4>
+<p>在示例<a href="https://github.com/usememos/memos/blob/main/docker-compose.yaml/">docker-compose.yaml</a> 文件中查看更多信息。</p>
+<p>通过访问 localhost:5230 即可打开 Memos，首次安装会提示注册用户，请记牢您的而密码。数据文件默认存储在 ~/.memos 中。</p>
+<p>如果~/.memos/没有memos_prod.db文件，则memos将自动生成它。</p>
+<h2 id="单页部署代码">
+    <a href="#%e5%8d%95%e9%a1%b5%e9%83%a8%e7%bd%b2%e4%bb%a3%e7%a0%81" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    单页部署代码
+</h2>
+<p>@<a href="https://immmmm.com/bb-by-memos/">木木大佬</a> 已做 js 文件调用处理，找个页面丢入以下 html + js + css 即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="p">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="p">=</span><span class="s">&#34;bber&#34;</span><span class="p">&gt;&lt;</span><span class="o">/</span><span class="nx">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nx">script</span> <span class="kd">type</span><span class="p">=</span><span class="s">&#34;text/javascript&#34;</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">bbMemos</span> <span class="p">=</span> <span class="p">{</span>
+    <span class="nx">memos</span> <span class="p">:</span> <span class="err">&#39;</span><span class="nx">https</span><span class="p">:</span><span class="c1">//me.edui.fun/&#39;,//修改为自己的 apiurl，末尾有 / 斜杠
+</span><span class="c1"></span>    <span class="nx">limit</span> <span class="p">:</span> <span class="err">&#39;&#39;</span><span class="p">,</span><span class="c1">//默认每次显示 10条 
+</span><span class="c1"></span>    <span class="nx">creatorId</span><span class="p">:</span><span class="err">&#39;&#39;</span> <span class="p">,</span><span class="c1">//默认为 101用户 https://demo.usememos.com/u/101
+</span><span class="c1"></span>    <span class="nx">domId</span><span class="p">:</span> <span class="err">&#39;&#39;</span><span class="p">,</span><span class="c1">//默认为 &lt;div id=&#34;bber&#34;&gt;&lt;/div&gt;
+</span><span class="c1"></span>  <span class="p">}</span>
+<span class="p">&lt;</span><span class="o">/</span><span class="nx">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="p">=</span><span class="s">&#34;https://immmmm.com/bb-lmm.js&#34;</span><span class="p">&gt;&lt;</span><span class="o">/</span><span class="nx">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="p">=</span><span class="s">&#34;https://fastly.jsdelivr.net/gh/Tokinx/ViewImage/view-image.min.js&#34;</span><span class="p">&gt;&lt;</span><span class="o">/</span><span class="nx">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="p">=</span><span class="s">&#34;https://fastly.jsdelivr.net/gh/Tokinx/Lately/lately.min.js&#34;</span><span class="p">&gt;&lt;</span><span class="o">/</span><span class="nx">script</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>样式代码还在持续更新中，所以详见源码。</p>
+<p>B言B语：<a href="https://chenyyds.com/bb">https://chenyyds.com/bb</a></p>
+<h2 id="扩展插件">
+    <a href="#%e6%89%a9%e5%b1%95%e6%8f%92%e4%bb%b6" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    扩展插件
+</h2>
+<p>Memos已经被@木木大佬玩出花样来了，新增浏览器扩展插件快捷发布内容。</p>
+<p><img src="https://chenyyds.com/images/browser.png" alt=""></p>
+<p>插件安装：<a href="https://me.edui.fun/o/r/52/memos-bber-0.1.0.zip">memos-bber-0.1.0.zip</a></p>
+<p>苹果iOS端可以：<a href="https://testflight.apple.com/join/YVHheZ50">MoeMemos IOS</a> 快捷指令发布</p>
+<p>由<a href="https://rabithua.club/">rabithua</a> 搭建的微信小程序版<a href="https://github.com/Rabithua/memos_wmp">麦墨</a> 可以发布哔哔.也可以自行搭建。</p>
+<p><strong>总之Memos非常不错。又可以畅所欲为了。</strong>  😎</p>
+    </div>
+</div>
+
+<div class="container">
+    
+    <nav class="flex container suggested">
+        
+        <a rel="prev" href="/posts/theme-2022/" title="Previous post (older)">
+            <span>Previous</span>
+            给博客换身皮
+            </a>
+        
+        
+        
+    </nav>
+    
+</div>
+ 
+<div class="container">
+    
+     <br> <div id="tcomment"></div>
+<script src="https://unpkg.com/twikoo@1.6.5/dist/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https:\/\/twikoo.chenyyds.com',
+  el: '#tcomment',
+  region: 'ap-shanghai',
+  path: 'window.location.pathname',
+  lang: 'zh-CN',
+})
+</script>
+
+
+</div>
+
+</main>
+
+
+        </main>
+        <footer class="footer flex">
+    <section class="container">
+        <nav class="footer-links">
+            
+            <a href="/index.xml">RSS</a>
+            
+        </nav>
+        <span id="busuanzi_container_site_pv" style='display:none'>总浏览数: <span id="busuanzi_value_site_pv"></span>次</span>
+        <span id="busuanzi_container_site_uv" style='display:none'> | 总访客数: <span id="busuanzi_value_site_uv"></span>人次</span>
+        
+    </section>
+    <script defer src="/ts/features.c81551cd4dbef120af278f16966a41142c02be9ff5d6a669be09820fbf047456.js" 
+    data-enable-footnotes="true"
+    ></script>
+</footer>
+
+    </body>
+</html>

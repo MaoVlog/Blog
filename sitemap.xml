@@ -6,8 +6,29 @@
     <lastmod>2020-11-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.maovlog.com/</loc>
-    <lastmod>2022-01-22T14:53:36+08:00</lastmod>
+    <lastmod>2022-10-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url><url>
+    <loc>https://blog.maovlog.com/tags/memos/</loc>
+    <lastmod>2022-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.maovlog.com/posts/memos-bber/</loc>
+    <lastmod>2022-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.maovlog.com/posts/</loc>
+    <lastmod>2022-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.maovlog.com/tags/</loc>
+    <lastmod>2022-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.maovlog.com/tags/%E5%90%90%E6%A7%BD/</loc>
+    <lastmod>2022-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.maovlog.com/tags/%E5%BE%AE%E5%8D%9A/</loc>
+    <lastmod>2022-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.maovlog.com/tags/%E8%AF%B4%E8%AF%B4/</loc>
+    <lastmod>2022-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.maovlog.com/categories/</loc>
     <lastmod>2022-01-22T14:53:36+08:00</lastmod>
@@ -15,19 +36,10 @@
     <loc>https://blog.maovlog.com/tags/hugo/</loc>
     <lastmod>2022-01-22T14:53:36+08:00</lastmod>
   </url><url>
-    <loc>https://blog.maovlog.com/posts/</loc>
-    <lastmod>2022-01-22T14:53:36+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.maovlog.com/tags/</loc>
-    <lastmod>2022-01-22T14:53:36+08:00</lastmod>
-  </url><url>
     <loc>https://blog.maovlog.com/tags/theme/</loc>
     <lastmod>2022-01-22T14:53:36+08:00</lastmod>
   </url><url>
     <loc>https://blog.maovlog.com/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2022-01-22T14:53:36+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.maovlog.com/tags/%E5%90%90%E6%A7%BD/</loc>
     <lastmod>2022-01-22T14:53:36+08:00</lastmod>
   </url><url>
     <loc>https://blog.maovlog.com/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/</loc>
@@ -52,9 +64,6 @@
     <lastmod>2021-02-16T16:53:46+08:00</lastmod>
   </url><url>
     <loc>https://blog.maovlog.com/posts/2021/</loc>
-    <lastmod>2021-02-16T16:53:46+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.maovlog.com/tags/%E5%BE%AE%E5%8D%9A/</loc>
     <lastmod>2021-02-16T16:53:46+08:00</lastmod>
   </url><url>
     <loc>https://blog.maovlog.com/tags/%E7%89%9B%E5%B9%B4/</loc>
